@@ -1,3 +1,6 @@
-dist-exe/
-dist/
 node_modules/
+dist/
+dist-exe/
+*.exe
+*.AppImage
+*.snap
