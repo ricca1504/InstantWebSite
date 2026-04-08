@@ -4,9 +4,9 @@
   "main": "electron/main.js",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "electron": "electron .",
-    "dist": "npm run build && electron-builder"
+    "dist": "vite build && electron-builder"
   },
   "dependencies": {
     "react": "^18.0.0",
