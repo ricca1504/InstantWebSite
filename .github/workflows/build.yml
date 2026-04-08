@@ -25,4 +25,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: InstantWebSite-exe
-          path: dist-exe/*.exe
+          path: dist-exe/**/*.exe
