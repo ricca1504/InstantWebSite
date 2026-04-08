@@ -1,16 +1,17 @@
 {
-  "name": "mia-app",
+  "name": "mia-app-tsx",
   "version": "1.0.0",
-  "main": "main.js", 
+  "main": "main.js",
   "scripts": {
-    "start": "electron-forge start",
-    "package": "electron-forge package",
+    "build": "vite build",
     "make": "electron-forge make"
+  },
+  "dependencies": {
+    "electron": "latest"
   },
   "devDependencies": {
     "@electron-forge/cli": "^7.0.0",
-    "@electron-forge/maker-squirrel": "^7.0.0",
-    "electron": "latest"
+    "@electron-forge/maker-squirrel": "^7.0.0"
   },
   "config": {
     "forge": {
