@@ -1,0 +1,26 @@
+name: Build Windows EXE
+on: [push] # Crea l'exe ogni volta che carichi codice
+
+jobs:
+  build:
+    runs-on: windows-latest # Usa un PC Windows di GitHub
+    steps:
+      - name: Checkout codice
+        uses: actions/checkout@v4
+
+      - name: Installa Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Installa dipendenze
+        run: npm install
+
+      - name: Crea l'eseguibile
+        run: npm run make
+
+      - name: Salva il file EXE
+        uses: actions/upload-artifact@v4
+        with:
+          name: App-Windows
+          path: out/make/squirrel.windows/x64/*.exe
