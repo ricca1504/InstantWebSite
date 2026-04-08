@@ -28,8 +28,7 @@
       "output": "dist-exe"
     },
     "win": {
-      "target": "nsis",
-      "icon": "public/icon.ico"
+      "target": "portable"
     },
     "files": [
       "dist/**/*",
